@@ -9,7 +9,7 @@ import {
   SignedOut,
   UserButton,
 } from '@clerk/nextjs'
-import Provider from "./provider";
+// import Provider from "./provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,9 +37,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Provider>
+        {/* <Provider> */}
           {children}
-        </Provider>
+        {/* </Provider> */}
 
       </body>
     </html>
